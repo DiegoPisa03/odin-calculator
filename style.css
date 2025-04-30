@@ -1,0 +1,67 @@
+html, body {
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+*, *:before, *:after { box-sizing: inherit; } /* Apply box-sizing to all elements */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    /* Calculate width: 4 buttons (50px each) + 3 gaps (5px each) = 215px */
+    /* Add container padding (10px left + 10px right) = 20px */
+    /* Total width = 215px + 20px = 235px */
+    width: 235px;
+    height: fit-content;
+    padding: 15px 10px; /* Added a bit more vertical padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 5px; /* Optional: rounded corners for the calculator */
+    gap: 10px; /* Add space between display and button rows */
+}
+
+#display {
+    /* Width should match the button rows area: 215px */
+    width: 215px;
+    height: 50px; /* Give display a fixed height */
+    background-color: #e0e0e0; /* Lighter background for display */
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-bottom: 10px; /* Space below display */
+    font-size: 24px; /* Larger font */
+    text-align: right; /* Align text to the right */
+    padding: 5px 10px; /* Padding inside display */
+    overflow: hidden; /* Prevent text overflow */
+    white-space: nowrap; /* Keep text on one line */
+}
+
+.btn {
+    width: 50px;  /* Standard button width */
+    height: 50px; /* Standard button height */
+    border-radius: 2px;
+    border: 1px solid black;
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer; /* Indicate clickable */
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 5px; /* Define space between buttons in a row */
+    width: 215px; /* Ensure row takes up the calculated width */
+}
+
+#zero {
+    /* Width = (2 * button width) + gap = (2 * 50px) + 5px = 105px */
+    width: 105px;
+}

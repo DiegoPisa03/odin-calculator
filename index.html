@@ -12,34 +12,34 @@
     <body>
         <div class = main-container>
             <div id="display" class="display">0</div>
-            <div id="first-row">
-                <button class="btn" id="clear">AC</button>
-                <button class="btn" id="sign">+/-</button>
-                <button class="btn" id="percent">%</button>
-                <button class="btn" id="divide">/</button>
+            <div class ="row" id="first-row">
+                <button class="btn clear" id="clear" data-action="clear">AC</button>
+                <button class="btn sign" id="sign" data-action="sign">+/-</button>
+                <button class="btn percent" id="percent" data-action="percent">%</button>
+                <button class="btn operator" id="divide" data-action="operator">/</button>
             </div>
-            <div id="second-row">
-                <button class="btn" id="seven">7</button>
-                <button class="btn" id="eight">8</button>
-                <button class="btn" id="nine">9</button>
-                <button class="btn" id="multiply">*</button>
+            <div class ="row" id="second-row">
+                <button class="btn number" id="seven" data-action="digit">7</button>
+                <button class="btn number" id="eight" data-action="digit">8</button>
+                <button class="btn number" id="nine" data-action="digit">9</button>
+                <button class="btn operator" id="multiply" data-action="operator">*</button>
             </div>
-            <div id="third-row">
-                <button class="btn" id="four">4</button>
-                <button class="btn" id="five">5</button>
-                <button class="btn" id="six">6</button>
-                <button class="btn" id="minus">-</button>
+            <div class ="row" id="third-row">
+                <button class="btn number" id="four" data-action="digit">4</button>
+                <button class="btn number" id="five" data-action="digit">5</button>
+                <button class="btn number" id="six" data-action="digit">6</button>
+                <button class="btn operator" id="minus" data-action="operator">-</button>
             </div>
-            <div id="fourth-row">
-                <button class="btn" id="one">1</button>
-                <button class="btn" id="two">2</button>
-                <button class="btn" id="three">3</button>
-                <button class="btn" id="plus">+</button>
+            <div class ="row" id="fourth-row">
+                <button class="btn number" id="one" data-action="digit">1</button>
+                <button class="btn number" id="two" data-action="digit">2</button>
+                <button class="btn number" id="three" data-action="digit">3</button>
+                <button class="btn operator" id="plus" data-action="operator">+</button>
             </div>
-            <div id="fifth-row">
-                <button class="btn" id="zero">0</button>
-                <button class="btn" id="dot">.</button>
-                <button class="btn" id="equals">=</button>
+            <div class ="row" id="fifth-row">
+                <button class="btn number" id="zero" data-action="digit">0</button>
+                <button class="btn dot" id="dot" data-action="decimal">.</button>
+                <button class="btn equal" id="equals" data-action="calculate">=</button>
             </div>
         </div>
     </body>
